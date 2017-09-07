@@ -1,4 +1,5 @@
 # README #
+!!!APP IN BUILD!!!
 
 1.What is SDManager?
 
