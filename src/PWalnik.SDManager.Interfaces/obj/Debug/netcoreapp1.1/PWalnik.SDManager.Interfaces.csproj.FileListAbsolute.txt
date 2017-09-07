@@ -1,0 +1,9 @@
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.deps.json
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.dll
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.pdb
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\bin\Debug\netcoreapp1.1\PWalnik.SDManager.DataModel.dll
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\bin\Debug\netcoreapp1.1\PWalnik.SDManager.DataModel.pdb
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\obj\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.csprojResolveAssemblyReference.cache
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\obj\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.AssemblyInfo.cs
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\obj\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.dll
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Interfaces\obj\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.pdb

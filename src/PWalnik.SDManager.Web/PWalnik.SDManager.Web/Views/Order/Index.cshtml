@@ -1,0 +1,89 @@
+@model PWalnik.SDManager.DataModel.ViewModels.PaginatedList<Order>
+
+@{
+    ViewData["Title"] = "Index";
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+<br/>
+<p>
+    <a asp-action="Create" asp-route-id="@ViewData["CustomerId"]" class="btn btn-custom"><span class="glyphicon glyphicon-plus"></span></a>
+</p>
+
+<table class="table table-striped" style="table-layout: fixed">
+    <thead>
+    <tr>
+        <th>
+            Order date
+        </th>
+        <th>
+            Quantity
+        </th>
+        <th>
+            Unit price
+        </th>
+        <th>
+            Discount
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Discount)%
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.OrderId">Edit</a> | 
+                <a data-toggle="modal" data-target="#DeleteModal" data-ord-id="@item.OrderId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<div id="DeleteModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form asp-controller="Order" asp-action="Delete" method="post">
+                            <input type="hidden" name="id" value=""/>
+                            <input type="submit" value="Yes" class="btn btn-success btn-block"/>
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a asp-action="Index" asp-route-page="@(Model.PageIndex - 1)" asp-route-id="@ViewData["CustomerId"]" class="btn btn-default @prevDisabled btn">
+    <span class="glyphicon glyphicon-arrow-left"></span>
+</a>
+Page @Model.PageIndex of @Model.TotalPages
+<a asp-action="Index" asp-route-page="@(Model.PageIndex + 1)" asp-route-id="@ViewData["CustomerId"]" class="btn btn-default @nextDisabled btn">
+    <span class="glyphicon glyphicon-arrow-right"></span>
+</a>
+Number of all orders: @Model.NumberOfItems
+
+

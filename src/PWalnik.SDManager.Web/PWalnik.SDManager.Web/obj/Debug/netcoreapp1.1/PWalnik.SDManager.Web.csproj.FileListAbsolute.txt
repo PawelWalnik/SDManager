@@ -1,0 +1,16 @@
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Web.deps.json
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Web.runtimeconfig.json
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Web.runtimeconfig.dev.json
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Web.dll
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Web.pdb
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\obj\Debug\netcoreapp1.1\PWalnik.SDManager.Web.csprojResolveAssemblyReference.cache
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\obj\Debug\netcoreapp1.1\PWalnik.SDManager.Web.AssemblyInfo.cs
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\obj\Debug\netcoreapp1.1\PWalnik.SDManager.Web.dll
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\obj\Debug\netcoreapp1.1\PWalnik.SDManager.Web.pdb
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.DataModel.dll
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.dll
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Services.dll
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Services.pdb
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.DataModel.pdb
+D:\Repozytoria\SDManager\src\PWalnik.SDManager.Web\PWalnik.SDManager.Web\bin\Debug\netcoreapp1.1\PWalnik.SDManager.Interfaces.pdb

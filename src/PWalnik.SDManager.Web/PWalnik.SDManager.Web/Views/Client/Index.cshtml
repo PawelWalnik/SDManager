@@ -1,0 +1,71 @@
+@model PWalnik.SDManager.DataModel.ViewModels.PaginatedList<Customer>
+
+@{
+    ViewData["Title"] = "Index";
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+<br/>
+<form asp-action="Index" method="get">
+<div class="form-actions no-color">
+    <p>
+        Find by name: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" />
+        <button type="submit" class="btn btn-default btn-md">
+            <span class="glyphicon glyphicon-search"></span>
+        </button> | 
+        <a asp-action="Index" class="btn btn-default btn-md">
+            <span class="glyphicon glyphicon-refresh"></span>
+        </a> | 
+        <a asp-action="Create" class="btn btn-custom">
+            <span class="glyphicon glyphicon-plus"></span>
+        </a>
+    </p>
+</div>
+</form>
+
+
+<table class="table table-striped" style="table-layout: fixed">
+    <thead>
+    <tr>
+        <th>
+            Company name
+        </th>
+        <th>
+            Adress
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a asp-controller="Order" asp-action="Index" asp-route-id="@item.CustomerId" data-toggle="tooltip" title="Click to see all orders!">
+                    @Html.DisplayFor(modelItem => item.CompanyName)
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adress), 
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-customerId="@item.CustomerId">Edit</a> | 
+                <a asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a> |
+                <a asp-controller="Order" asp-action="Create" asp-route-id="@item.CustomerId">Add order</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a asp-action="Index" asp-route-page="@(Model.PageIndex - 1)" asp-route-currentFilter="@ViewData["CurrentFilter"]" class="btn btn-default @prevDisabled btn">
+    <span class="glyphicon glyphicon-arrow-left"></span>
+</a>
+Page @Model.PageIndex of @Model.TotalPages
+<a asp-action="Index" asp-route-page="@(Model.PageIndex + 1)" asp-route-currentFilter="@ViewData["CurrentFilter"]" class="btn btn-default @nextDisabled btn">
+    <span class="glyphicon glyphicon-arrow-right"></span>
+</a>
+Number of all clients: @Model.NumberOfItems
+
+

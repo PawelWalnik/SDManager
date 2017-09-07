@@ -1,0 +1,39 @@
+@using PWalnik.SDManager.DataModel.Enums
+@model IEnumerable<PWalnik.SDManager.DataModel.Models.Employee>
+
+
+<table class="table table-striped" style="table-layout: fixed">
+    <thead>
+    <tr>
+        <th>
+            First name
+        </th>
+        <th>
+            Last name
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                <a asp-action="EditUser" asp-route-id="@item.EmployeeId">Edit</a> | 
+                <a asp-action="DeleteUser" asp-route-id="@item.EmployeeId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<p>
+        <a asp-action="CreateUser" class="btn btn-custom"><span class="glyphicon glyphicon-plus"></span></a>
+</p>
+
